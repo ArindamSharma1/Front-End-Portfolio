@@ -5,7 +5,7 @@ import { ExternalLink, Github } from 'lucide-react';
 const projects = [
 	{
 		title: 'Learn Vista-Moodle LMS',
-		image: './src/images/learn-vista.png',
+		image: '/projects/learn-vista.png',
 		tech: ['React', 'JavaScript', 'CSS', 'API Integration'],
 		description:
 			'A Moodle LMS student portal with integrated with multiple languages support.',
@@ -14,7 +14,7 @@ const projects = [
 	},
 	{
 		title: 'Quantum QR',
-		image: './src/images/Quantum-QR.png',
+		image: '/projects/Quantum-QR.png',
 		tech: [
 			'React',
 			'JavaScript',
@@ -30,7 +30,7 @@ const projects = [
 	},
 	{
 		title: 'Cleanfolio-Portfolio Website',
-		image: './src/images/portfolio-website.png',
+		image: '/projects/portfolio-website.png',
 		tech: ['React', 'Vite', 'GSAP', 'JavaScript', 'Responsive Design', 'CSS'],
 		description:
 			'Very Simple but effective & Modern, responsive portfolio website with smooth animations and scroll effects.',
@@ -39,7 +39,7 @@ const projects = [
 	},
 	{
 		title: 'JYC-JUIT Youth Club Website',
-		image: './src/images/jyc-juit.png',
+		image: '/projects/jyc-juit.png',
 		tech: ['React', 'Chart.js', 'API Integration', 'Tailwind CSS', 'REST APIs'],
 		description:
 			'Helped creating official website for JUIT Youth Club featuring event management, member profiles, and activity tracking.',
@@ -48,7 +48,7 @@ const projects = [
 	},
 	{
 		title: 'Helped Maintain University Website',
-		image: './src/images/juit.png',
+		image: '/projects/juit.png',
 		tech: [
 			'React',
 			'API',
@@ -65,7 +65,7 @@ const projects = [
 	},
 	{
 		title: 'Framer Portfolio',
-		image: './src/images/framer-portfolio.png',
+		image: '/projects/framer-portfolio.png',
 		tech: ['Framer', 'Framer Motion', 'Spline', 'Responsive Design', 'Animations'],
 		description:
 			'A portfolio website built with Framer, showcasing projects with dynamic content and smooth animations.',

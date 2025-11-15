@@ -1,0 +1,10 @@
+export { Navigation } from './Navigation';
+export { ProgressBar } from './ProgressBar';
+export { SideContact } from './SideContact';
+export { Hero } from './Hero';
+export { About } from './About';
+export { TechStack } from './TechStack';
+export { Experience } from './Experience';
+export { Projects } from './Projects';
+export { Contact } from './Contact';
+export { Footer } from './Footer';

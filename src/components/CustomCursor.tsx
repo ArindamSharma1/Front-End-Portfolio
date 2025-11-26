@@ -5,7 +5,6 @@ export default function CustomCursor() {
 
   const [hovering, setHovering] = useState(false);
 
-  // These store actual / target positions
   const pos = useRef({ x: 0, y: 0 });
   const target = useRef({ x: 0, y: 0 });
 
@@ -26,7 +25,6 @@ export default function CustomCursor() {
       el.addEventListener("mouseleave", handleLeave);
     });
 
-    // Animation loop for smooth movement
     let animationFrame: number;
     const animate = () => {
       pos.current.x += (target.current.x - pos.current.x) * speed;
@@ -36,13 +34,15 @@ export default function CustomCursor() {
         const size = hovering ? 40 : 18;
         const offset = size / 2;
 
-        cursorRef.current.style.transform = `translate(${pos.current.x - offset}px, ${
-          pos.current.y - offset
-        }px)`;
+        cursorRef.current.style.transform = `translate(
+          ${pos.current.x - offset}px,
+          ${pos.current.y - offset}px
+        )`;
       }
 
       animationFrame = requestAnimationFrame(animate);
     };
+
     animate();
 
     return () => {
@@ -60,12 +60,14 @@ export default function CustomCursor() {
   return (
     <div
       ref={cursorRef}
-      className="fixed pointer-events-none z-[9999] mix-blend-difference transition-[width,height,border] duration-150 ease-out"
+      className="fixed pointer-events-none z-[9999] transition-[width,height,background,border] duration-150 ease-out"
       style={{
         width: hovering ? "40px" : "18px",
         height: hovering ? "40px" : "18px",
-        border: "1.5px solid white",
+        backgroundColor: "#38BDF8",          // solid fill
+        border: "1.5px solid #7DD3FC",      // lighter border
         borderRadius: "9999px",
+        opacity: 0.9                         // subtle softness
       }}
     />
   );

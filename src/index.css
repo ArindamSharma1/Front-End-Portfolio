@@ -111,9 +111,9 @@ html.dark body {
 }
 
 /* Hide default cursor */
-* {
+/* * {
   cursor: none !important;
-}
+} */
 
 /* Smooth theme transition */
 html, body {
